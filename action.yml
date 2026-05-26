@@ -46,10 +46,8 @@ runs:
         python-version: "3.11"
 
     - name: Setup Trivy
-      uses: aquasecurity/setup-trivy@v0.2.4
-      with:
-        version: v0.67.0
-        cache: true
+      uses: aquasecurity/setup-trivy@e07451d2e059ed86c2870430ea286b3a9e0bf241
+  
 
     - name: Restore Trivy DB cache
       uses: actions/cache@v4
